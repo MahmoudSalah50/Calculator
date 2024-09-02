@@ -1,0 +1,68 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background-image: url("https://media.istockphoto.com/id/1419844586/vector/stem-blue-horizontal-frame-vector-education-bright-illustration.jpg?s=612x612&w=0&k=20&c=-A1eYLYulujNsiM26lkVy7qMT_Hp82N5EtKHSFRmigk=");
+}
+
+.calculator {
+  width: 400px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.display {
+  background-color: #1e1e1e;
+  color: #fff;
+  padding: 20px;
+  font-size: 2em;
+  text-align: right;
+  border-bottom: 1px solid #333;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+}
+
+.btn {
+  background-color: #f4f4f4;
+  border: none;
+  padding: 20px;
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #e0e0e0;
+}
+
+.btn:active {
+  background-color: #ccc;
+}
+
+.operator {
+  background-color: #0066ff;
+  color: #fff;
+}
+
+.operator:hover {
+  background-color: #00e08a;
+}
+
+.equal {
+  background-color: #0066ff;
+  color: #fff;
+  grid-column: span 4;
+}
+
+.equal:hover {
+  background-color: #00e08a;
+}
